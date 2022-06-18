@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">probabilityCalc</string>
+    <string name="hintP">decimal probability from 0 to 1</string>
+    <string name="hintN">number of experiments</string>
+    <string name="hintK">number of luck experiments</string>
+    <string name="P">p:</string>
+    <string name="N">n:</string>
+    <string name="K">k:</string>
+    <string name="buttonText">calculate</string>
+    <string name="X">X</string>
+    <string name="AnotherK">k</string>
+</resources>

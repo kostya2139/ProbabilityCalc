@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80sp"
+        android:layout_marginTop="52sp"
+        android:ems="14"
+        android:hint="@string/hintK"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextN" />
+
+    <EditText
+        android:id="@+id/editTextN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80sp"
+        android:layout_marginTop="52sp"
+        android:ems="14"
+        android:hint="@string/hintN"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextP" />
+
+    <EditText
+        android:id="@+id/editTextP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80sp"
+        android:layout_marginTop="52sp"
+        android:ems="14"
+        android:hint="@string/hintP"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56sp"
+        android:layout_marginEnd="8sp"
+        android:text="@string/P"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextP"
+        app:layout_constraintEnd_toStartOf="@+id/editTextP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52sp"
+        android:layout_marginEnd="8sp"
+        android:text="@string/N"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextN"
+        app:layout_constraintEnd_toStartOf="@+id/editTextN"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54sp"
+        android:layout_marginEnd="8sp"
+        android:text="@string/K"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextK"
+        app:layout_constraintEnd_toStartOf="@+id/editTextK"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30sp"
+        android:onClick="btnCalc"
+        android:text="@string/buttonText"
+        android:textSize="11sp"
+
+        app:cornerRadius="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30sp"
+        android:text=""
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextK" />
+
+    <TextView
+        android:id="@+id/X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8sp"
+        android:layout_marginBottom="-60sp"
+        android:text="@string/X"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextK"
+        app:layout_constraintEnd_toStartOf="@+id/editTextK"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/X"
+        app:layout_constraintStart_toEndOf="@+id/X"
+        app:layout_constraintTop_toTopOf="@+id/X"
+
+        />
+
+    <TextView
+        android:id="@+id/K"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginBottom="-60sp"
+        android:text="@string/AnotherK"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextK"
+        app:layout_constraintStart_toEndOf="@+id/spinner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
